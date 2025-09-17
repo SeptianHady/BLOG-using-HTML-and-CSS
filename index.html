@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Kuliner Pribadi</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container header">
-            <div class="logo">KulinerKu</div>
+        <div class="header">
+            <div class="logo"><h1><a href="#home">KulinerKu</a></h1></div>
+
             <nav>
                 <ul>
                     <li><a href="#home">Beranda</a></li>
@@ -17,7 +19,20 @@
                     <li><a href="#recipes">Resep</a></li>
                     <li><a href="#contact">Kontak</a></li>
                 </ul>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
-            <button class="btn">Login</button>
         </div>
     </header>
+
+    <main>
+        <section class="utama" id="home">
+            <div class="container utama-content">
+                <h2>Selamat Datang di Blog KulinerKu!</h2>
+                <p>Temukan resep-resep lezat dan tips memasak dari saya.</p>
+                <a href="#recipes" class="btn">Lihat Resep</a>
+            </div>
+        </section>
+    </main>
+
