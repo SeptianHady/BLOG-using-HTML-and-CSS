@@ -19,9 +19,9 @@ body {
 }
 
 header {
-    background-color: #696969;
+    background-color: #ff6347;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,14 +31,14 @@ header h1 {
 
 .logo {
     font-weight: bold;
-    color: #ff0000;
+    color: #fdcf00;
     text-decoration: none;
     margin-right: 20px;
     cursor: pointer;
 }
 
 .logo a {
-    color: #ff0000;
+    color: #fdcf00;
     text-decoration: none;
 }
 
@@ -47,7 +47,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #696969;
+    /* background-color: #696969; */
 }
 
 li {
@@ -63,14 +63,15 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #fdcf00;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    background-color: #696969;
+    margin-top: -55px;
+    /* background-color: #696969; */
     color: #fff;
 }
 
@@ -81,7 +82,7 @@ nav a {
 }
 
 .menu-toggle {
-    /* display: none; */
+    display: none;
     background: none;
     border: none;
     color: white;
@@ -97,6 +98,8 @@ main {
     background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
     color: white;
     text-align: center;
+    min-height: 500px;
+    background-size: cover;
     padding: 100px 20px;
     margin-bottom: 40px;
 }
@@ -109,7 +112,7 @@ main {
 .utama-content p {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    max-width: 600px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -141,4 +144,59 @@ main {
     color: white;
 }
 
+.section {
+    padding: 60px 0;
+}
 
+.section-light {
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #d35400;
+}
+
+.resep-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.resep-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0/ 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.resep-card:hover {
+    transform: translateY(-10px);
+}
+
+.resep-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.resep-card h3 {
+    margin: 15px;
+    color: #e67e22;
+}
+
+.resep-card p {
+    margin: 0 15px 15px 15px;
+    flex-grow: 1;
+    color: #555;
+}
+
+.resep-card .btn-outline {
+    margin: 0 15px 15px 15px;
+    text-align: center;
+}
