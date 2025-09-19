@@ -207,3 +207,34 @@ main {
     margin: 0 15px 15px 15px;
     text-align: center;
 }
+
+.tentang-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tentang-img {
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tentang-content div {
+    flex: 1;
+}
+
+.tentang-content h2 {
+    color: #d35400;
+    margin-bottom: 15px;
+}
+
+.tentang-content p {
+    color: #555;
+    font-size: 1rem;
+}
