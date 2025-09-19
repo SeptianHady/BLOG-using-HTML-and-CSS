@@ -177,6 +177,7 @@ main {
 
 .resep-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .resep-card img {
@@ -195,6 +196,12 @@ main {
     flex-grow: 1;
     color: #555;
 }
+
+.resep-card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 
 .resep-card .btn-outline {
     margin: 0 15px 15px 15px;
